@@ -55,16 +55,7 @@ list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         Toast.makeText(getApplicationContext(),"Proceeding to payment options" ,Toast.LENGTH_SHORT).show();
                     }
                 });
-        alertDialogBuilder.setNegativeButton("DELETE",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                       deleteName(listItems);
-                        Intent myIntent = new Intent(OrderList.this, HomeFragment.class);
-                        OrderList.this.startActivity(myIntent);
-                        Toast.makeText(getApplicationContext(),"Item successfully deleted",Toast.LENGTH_SHORT).show();
-                    }
-                });
+
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
     }

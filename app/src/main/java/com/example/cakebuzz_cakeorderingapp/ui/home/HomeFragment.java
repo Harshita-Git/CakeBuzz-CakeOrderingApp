@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         context = getActivity();
         final ListView listview = root.findViewById(R.id.listview);
-        final SearchView searchView = root.findViewById(R.id.searchView);
+
         //create data
         ArrayList<Cake> arrayList = new ArrayList<>();
         arrayList.add(new Cake(R.drawable.chocolate, "Chocolate Cake","Price= 300/-"));
